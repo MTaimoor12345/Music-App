@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="fontawesome-free-5.10.2-web/css/all.min.css" rel="stylesheet" type="text/css">
+
+<style>
+.top{
+	width:100%;
+	height:auto
+	}
+.top h3{
+	 
+	 word-spacing:10px
+	 }
+.a1{
+	height:250px;
+	background:#000;
+	margin-left:60px;
+	margin-top:10px;
+	box-shadow:2px 2px 5px #999;
+	cursor:pointer;
+	border-radius:10px
+	}
+.b1{
+	background:url(images/37d902912f32fc7a851be5578a299668.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b2{
+	background:url(images/500x500.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b3{
+	background:url(images/Top-7-European-Singers.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b4{
+	background:url(images/heart_inscription_neon_love_119592_1366x768.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b5{
+	background:url(images/work_dream_neon_129885_1366x768.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b6{
+	background:url(images/s-l600.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b7{
+	background:url(images/500x500.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b8{
+	background:url(images/neon_hands_prayer_120040_1366x768.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b9{
+	background:url(images/photo-1499415479124-43c32433a620.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}	
+	.b10{
+	background:url(images/photo-1505740420928-5e560c06d30e.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b11{
+	background:url(images/s-l600.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}
+	.b12{
+	background:url(images/work_dream_neon_129885_1366x768.jpg);
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	}	 	
+</style>
+
+
+
+</head>
+
+<body>
+|<div class="top">
+  <div class="container">
+   <div class="row">
+     <div class="col-md-12 text-center"><h3><i class="fas fa-music"></i><b>MY MUSIC PLAYER
+     <i class="fas fa-music"></i></b></h3> </div>
+   </div>
+   </div>
+   <div class="container">
+  
+    <div class="row">
+      <div class="col-sm-3 a1 b1 song">a</div>
+      <div class="col-sm-3 a1 b2 song">b</div>
+      <div class="col-sm-3 a1 b3 song">c</div>
+    </div>
+ <div class="row">
+      <div class="col-sm-3 a1 b4 song">d</div>
+      <div class="col-sm-3 a1 b5 song">e</div>
+      <div class="col-sm-3 a1 b6 song">f</div>
+    </div>
+     <div class="row">
+      <div class="col-sm-3 a1 b7 song">g</div>
+      <div class="col-sm-3 a1 b8 song">h</div>
+      <div class="col-sm-3 a1 b9 song">i</div>
+    </div>
+     <div class="row">
+      <div class="col-sm-3 a1 b10 song">j</div>
+      <div class="col-sm-3 a1 b11 song">k</div>
+      <div class="col-sm-3 a1 b12 song">l</div>
+    </div>   
+   
+   </div>
+</div>
+<script>
+var divlenght = document.querySelectorAll('.song').length;
+console.log(divlenght);
+
+for(var i=0; i<divlenght; i++) {
+var demo = document.querySelectorAll('.song')[i].addEventListener('click',playsong);
+var demo = document.querySelectorAll('.song')[i].addEventListener('dblclick',pausesong);
+};
+var song1 = new Audio();
+song1.src = "music/Atif_Aslam_-_Khair_Mangda.mp3";
+
+var song2 = new Audio();
+song2.src = "music/Buhe_Bariyan_-_Rashmeet_Kaur____Music_by_Vishal_Dixit.mp3";
+
+var song3 = new Audio();
+song3.src = "music/BULAVE_TUJHE_YAARI_AAJ_MERI_GALIYAN...........(256k).mp3";
+
+var song4 = new Audio();
+song4.src = "music/Chunar_Full_Song___Disney's_ABCD_2___Varun_Dhawan_-_Shraddha_Kapoor___Arijit_Singh___Sachin_-_Jigar.mp3";
+
+var song5 = new Audio();
+song5.src = "music/Duniya_Bana_laiye___full_song_1080p_HD___A.P_MUSIC_WORLD(128k).mp3";
+
+var song6 = new Audio();
+song6.src = "music/Ek_Villain____Banjaara_Ek_(Full_Video_Song)..Lyrics_Shraddha_Kapoor_&_Sidharth_Malhotra,,,,,2014(128k).mp3";
+
+var song7 = new Audio();
+song7.src = "music/Goom_Hai_Kisi_Ke__Full_Song_in_HD_with_Lyrics__Kavita_Krishnamurthy__Hariharan__Dil_Vil_Pyar_Vyar(256k).mp3";
+
+var song8 = new Audio();
+song8.src = "music/Ho Mahi Mahi mainu Chad da Na tere Bina Dil naiyo Lage Na.mp3";
+
+var song9 = new Audio();
+song9.src = "music/Kahin Deep Jalay _ Full OST _ Neelam Muneer _ Imran Ashraf _ Geo TV _ Har Pal Geo.mp3";
+
+var song10 = new Audio();
+song10.src = "music/Kya_Janu_Sajan_-_[_Beautiful_song_](128k).mp3";
+
+var song11 = new Audio();
+song11.src = "music/Laila O Laila - Ali Zafar ft Urooj Fatima _ Lightingale Productions.mp3";
+
+var song12 = new Audio();
+song12.src = "music/Sun_Saathiya_Full_Video___Disney's_ABCD_2___Varun_Dhawan_,_Shraddha_Kapoor___Sachin_Jigar___Priya_S.mp3";
+function playsong(){
+var songId=this.innerHTML;
+console.log(songId);
+switch (songId) {
+  case "a":
+   song1.play();
+   break;
+   
+   case "b":
+   song2.play();
+   break;
+   
+    case "c":
+   song3.play();
+   break;
+   
+   case "d":
+   song4.play();
+   break;
+   
+   case "e":
+   song5.play();
+   break;
+   
+    case "f":
+   song6.play();
+   break;
+   
+   case "g":
+   song7.play();
+   break;
+   
+   case "h":
+   song8.play();
+   break;
+   
+    case "i":
+   song9.play();
+   break;
+   
+   case "j":
+   song10.play();
+   break;
+   
+   case "k":
+   song11.play();
+   break;
+   
+    case "l":
+   song12.play();
+   break;
+   
+  default:
+   console.log("wrong input");
+   break;
+ }
+}
+function pausesong(){
+ var songId = this.innerHTML;
+ console.log(songId);
+
+ switch (songId) {
+  case "a":
+   song1.pause();
+   break;
+   
+    case "b":
+   song2.pause();
+   break;
+   
+    case "c":
+   song3.pause();
+   break;
+   
+    case "d":
+   song4.pause();
+   break;
+   
+    case "e":
+   song5.pause();
+   break;
+   
+    case "f":
+   song6.pause();
+   break;
+   
+    case "g":
+   song7.pause();
+   break;
+   
+    case "h":
+   song8.pause();
+   break;
+   
+    case "i":
+   song9.pause();
+   break;
+   
+    case "j":
+   song10.pause();
+   break;
+   
+    case "k":
+   song11.pause();
+   break;
+   
+    case "l":
+   song12.pause();
+   break;
+   
+  default:
+   console.log("wrong input");
+   break;
+ }
+}
+</script>
+</body>
+</html>
